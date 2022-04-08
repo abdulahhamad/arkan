@@ -1,0 +1,12 @@
+.MuiAppBar{
+  background-color:rgb(10 68 115)  !important;
+    box-shadow: inset 1px 20px 17px 0px #00000078 !important;
+    direction: rtl;
+
+    background-image: repeating-linear-gradient(315deg, #9191915f 0, #91919167 1px, transparent 0, transparent 50%);
+    background-size: 10px 10px;
+
+    *{
+    color: #fff !important;
+  }  
+}
