@@ -1,12 +1,42 @@
-.MuiAppBar{
-  background-color:rgb(10 68 115)  !important;
-    box-shadow: inset 1px 20px 17px 0px #00000078 !important;
-    direction: rtl;
+.MuiAppBar {
+  background-color: rgb(10 68 115) !important;
+  box-shadow: inset 1px 20px 17px 0px #00000078 !important;
+  background-image: repeating-linear-gradient(315deg, #9191915f 0, #91919167 1px, transparent 0, transparent 50%);
+  background-size: 10px 10px;
 
-    background-image: repeating-linear-gradient(315deg, #9191915f 0, #91919167 1px, transparent 0, transparent 50%);
-    background-size: 10px 10px;
-
-    *{
+  * {
     color: #fff !important;
-  }  
+  }
+  .navLink {
+  margin: 0 70px !important;
+  text-transform: capitalize !important;
+  font-size: 1.3rem !important;
+}
+.MobileIconButton{
+  flex-grow: 1 !important;
+  display: flex;
+  justify-content: flex-end;
+  button{
+    background-color: #fff !important;
+    border-radius: 15px !important;
+    svg{
+      fill: rgb(10 68 115) !important;
+    }
+  }
+  @media (min-width: 786px) {
+    display: none !important;
+  }
+}
+.mobileLogo{
+  padding: 20px !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: start;
+  img{
+    width: 60% !important;
+  }
+  @media (min-width: 786px) {
+    display: none !important;
+  }
+}
 }
