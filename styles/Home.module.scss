@@ -1,4 +1,67 @@
-.MuiAppBar{
-    background-color: #fff !important;
-    box-shadow: none !important;
+.PageHeader {
+  background-color: #08365c;
+  background-image: repeating-linear-gradient(315deg, #9191915f 0, #91919167 1px, transparent 0, transparent 50%);
+  background-size: 10px 10px;
+  background-color: #0a4473;
+  padding-bottom: 30%;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -49%;
+    width: 102%;
+    height: 60%;
+    background-color: #fff;
+    transform: rotate(0.54turn);
   }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+    width: 105%;
+    height: 60%;
+    background-color: #fff;
+    transform: rotate(0.46turn);
+  }
+  .PageHeaderTexts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    h3 {
+      color: #f1d9bf;
+      font-weight: 900;
+      padding: 0;
+      margin: 0;
+    }
+    p {
+      color: #fff;
+      font-weight: 300;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .PageHeaderBottomLogo {
+    position: absolute;
+    bottom: 32%;
+    left: 50% !important ;
+    transform: translateX(-50%);
+    z-index: 9;
+  }
+}
+.PageHeaderBottomTexts{
+  position: relative;
+  transform: translateY(-200%);
+  text-align: center;
+  p{
+    color: #fff;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+  }
+}
